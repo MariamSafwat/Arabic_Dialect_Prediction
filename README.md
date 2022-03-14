@@ -30,7 +30,7 @@ Deployment is done using FastAPI
 The api code is found in code/server.py
 The following command will run the server
 ```
-uvicorn main:app
+uvicorn server:app
 ```
 Then navigate to http://127.0.0.1:8000/docs in your browser and you will see the documentation page created automatically by FastAPI.
 To make a prediction, first click the “predict” route and then click on the button “Try it out”. Write any arabic text then click the execute button to make a prediction and get the result.
