@@ -2,18 +2,13 @@ from fastapi import FastAPI
 import pickle
 import re
 
-
+# Initialize a FastAPI app instance
 app = FastAPI(
     title="Arabic Dialect Classification API",
     description="A simple API that use NLP model to predict the dialect of arabic text",
 )
 
 # load the model
-# with open(
-#     join(dirname(realpath(__file__)), "models/sentiment_model_pipeline.pkl"), "rb"
-# ) as f:
-#     model = joblib.load(f)
-
 with open('models\LR_model.pkl', 'rb') as f:
             model = pickle.load(f)
 
